@@ -1,0 +1,469 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth ;
+}
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    width: 100%;
+    padding: 15px 30px;
+    box-shadow: 0 10px 15px rgba(25,25,25,0.1);
+}
+.container-fluid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar-nav .nav-item   .nav-link{
+    color: rgb(5, 5, 5);
+    transition: all 0.6s ease ;
+}
+.navbar-nav .nav-item   .nav-link:hover{
+background-color: rgba(255,0,0,0.507);
+font-size: 18px;
+}
+header {
+    background-color: rgb(240,240,242);
+    margin-top: 60px;
+}
+header .container .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .container .row h1{
+    font-size: 80px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: rgb(11,28,57);
+}
+header .container .row p{
+    font-size: 17px;
+    line-height: 1.6;
+    font-weight: 400;
+    color: rgb(33,32,37);
+    padding: 30px 0;
+}
+header .container .row a{
+    padding: 15px 29px;
+    color: rgb(255,255,255);
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: 600;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    letter-spacing: 5px;
+    background: linear-gradient(to left , #4a4a4b, #4a4a4b)no-repeat;
+    background-size: 0%;
+    background-color: red;
+    transition: all 1s ease;
+}
+header .container .row a:hover{
+    background-size: 100%;
+}
+.newArrivals{
+    padding: 40px 0px;
+}
+.newArrivals .container h2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    line-height: 1;
+    font-size: 37px;
+    font-weight: 700;
+    color: #000;
+}
+.newArrivals .boxes .box .img-zoom {
+overflow: hidden;
+}
+.newArrivals .boxes .box .img-zoom img{
+    width: 100%;
+    transition: all 1s ease;
+    
+}
+.newArrivals .boxes .box .img-zoom img:hover{
+    transform: scale(1.1);
+    transition: 0.7s ;
+}
+.newArrivals .boxes .text a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 37px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #000;
+    
+}
+.newArrivals .boxes .text p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 200;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #000;
+    padding: 10px 0;
+}
+.gallery  {
+    padding: 0;
+    overflow: hidden;
+}
+.gallery  .single-gallery {
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.gallery  .single-gallery .big-img {
+    height: 690px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.gallery  .single-gallery .small-img {
+    height: 330px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.gallery .row .gallery-img{
+    transform: scale(1.06);
+    transition: all 0.5s ease;
+}
+.gallery .row .gallery-img:hover{
+    transform: scale(1);
+    filter: brightness(0.6);
+}
+.populrItems .watch{
+    position: relative;
+    border-bottom: 3px solid #f81f1F;
+}
+.populrItems .watch  i{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 30px;
+    opacity: 0;
+}
+.populrItems .watch a{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: red;
+    padding: 20px;
+    opacity: 0;
+}
+.populrItems .watch:hover  i{
+    opacity: 1;
+    transition: all 1s ease;
+}
+.populrItems .watch:hover  a{
+    opacity: 1;
+    transition: all 1s ease;
+}
+.populrItems .row .text a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+    line-height: 1;
+    font-weight: 200;
+    text-decoration: none;
+    color: #000;
+    
+}
+.populrItems .row .text p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 500;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #000;
+    padding: 10px 0;
+}
+.watch {
+    background-color: rgb(240,240,242);
+    margin-top: 60px;
+}
+.watch .container .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+}
+.watch .container .row h1{
+    font-size: 80px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: rgb(11,28,57);
+}
+.watch .container .row p{
+    font-size: 17px;
+    line-height: 1.6;
+    font-weight: 400;
+    color: rgb(33,32,37);
+    padding: 30px 0;
+}
+.watch .container .row a{
+    padding: 15px 29px;
+    color: rgb(255,255,255);
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: 600;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    letter-spacing: 5px;
+    background: linear-gradient(to left , #4a4a4b, #4a4a4b)no-repeat;
+    background-size: 0%;
+    background-color: red;
+    transition: all 1s ease;
+}
+.watch .container .row a:hover{
+    background-size: 100%;
+}
+.watch2 {
+    background-color: rgb(240,240,242);
+    margin-top: 60px;
+}
+.watch2 .container .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+}
+.watch2 .container .row h1{
+    font-size: 80px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: rgb(11,28,57);
+}
+.watch2 .container .row p{
+    font-size: 17px;
+    line-height: 1.6;
+    font-weight: 400;
+    color: rgb(33,32,37);
+    padding: 30px 0;
+}
+.watch2 .container .row a{
+    padding: 15px 29px;
+    color: rgb(255,255,255);
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: 600;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    letter-spacing: 5px;
+    background: linear-gradient(to left , #4a4a4b, #4a4a4b)no-repeat;
+    background-size: 0%;
+    background-color: red;
+    transition: all 1s ease;
+}
+.watch2 .container .row a:hover{
+    background-size: 100%;
+}
+.service{
+    padding-bottom: 40px;
+}
+.service .container{
+    background-color: #ea0000;
+    padding: 10px 30px 0px 30px;
+}
+.service .container .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.service .container .row .column{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+.service .container .row i{
+    font-size: 40px;
+    color: #ffff;
+    margin: 25px 0px;
+}
+.service .container .row h6{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 12px;
+    font-family: "Roboto",sans-serif;
+}
+.service .container .row p{
+    font-size: 16px;
+    color: #d3d1d1;
+    font-family: "Roboto",sans-serif;
+    line-height: 30px;
+    margin-bottom: 15px;
+    font-weight: normal;
+}
+footer{
+    padding: 40px 0px;
+}
+footer .top-Footer{
+    padding: 40px 0px;
+    margin-top: 20px;
+}
+footer .top-Footer .footer-tittle{
+    padding-bottom: 40px;
+}
+footer .top-Footer img{
+    margin-bottom: 40px;
+}
+footer .top-Footer p{
+    color: #868c98;
+    font-size: 16px;
+    margin-bottom: 50px;
+    line-height: 1.8;
+}
+footer .top-Footer .footer-tittle h4{
+    color: #000;
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-family: "Roboto",sans-serif;
+}
+footer .top-Footer .footer-tittle ul{
+    list-style: none;
+}
+footer .top-Footer .footer-tittle li{
+    margin-bottom: 15px;
+}
+footer .top-Footer .footer-tittle li a{
+    color: #868c98;
+    font-weight: 300;
+    text-decoration: none;
+    font-family: "Roboto",sans-serif;
+}
+footer .top-Footer .footer-tittle li a:hover{
+    color: #ff2020;
+    padding-left: 5px;
+    transition: 0.3s;
+}
+footer .bottom-Footer{
+    padding: 20px 0px;
+    margin: 20px 0px;
+}
+footer .bottom-Footer .row{
+    display: flex;
+    justify-content: space-between;
+}
+footer .bottom-Footer p{
+    color: #888888;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 2;
+    font-family: "Roboto",sans-serif;
+}
+footer .bottom-Footer p span{
+    color: #ff2020;
+    font-weight: bold;
+}
+footer .bottom-Footer i{
+    padding: 0px 10px;
+    transition: transform 0.7s ease-in-out;
+}
+footer .bottom-Footer i:hover{
+    color: #ff2020;
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+/************************ Start Media Query *****************************/
+@media only screen and (min-width: 0px) and (max-width: 575px){
+    header .container .row {
+        padding: 50px 0px;
+    }
+    header .container .row h1 {
+    font-size: 35px;
+    }
+    header .container .row img {
+        display: none;
+    }
+    .popularItems .heading h2{
+        font-size: 33px;
+    }
+    .chooseWatch .row{
+        padding: 0px;
+        margin: 0px;
+    }
+    .chooseWatch .text h2{
+        font-size: 30px;
+    }
+    .chooseWatch img{
+        padding: 30px 0px;
+    }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px){
+    header .container .row h1 {
+    font-size: 35px;
+    }
+    header .container .row img {
+        height:400px ;
+    }
+    .newArrivals .boxes .box a{
+        font-size: 17px;
+    }
+    .popularItems .box .text a{
+        font-size: 17px;
+    }
+    .chooseWatch .row{
+        padding: 0px;
+        margin: 0px;
+    }
+    .chooseWatch .text h2{
+        font-size: 30px;
+    }
+    .chooseWatch img{
+        padding: 30px 0px;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    header .container .row h1 {
+        font-size: 50px;
+    }
+    header .container .row img {
+        height:500px ;
+    }
+    .newArrivals .boxes .box a{
+        font-size: 17px;
+    }
+    
+    .chooseWatch .text h2{
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    .chooseWatch .text p{
+        margin-bottom: 30px;
+    }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+    header .container .row h1 {
+        font-size: 60px;
+    }
+    header .container .row img {
+        height:500px ;
+    }
+    .chooseWatch .text h2{
+        font-size: 43px;
+    }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1550px){
+.service .container .row p{
+    width: 70%;
+}
+}
